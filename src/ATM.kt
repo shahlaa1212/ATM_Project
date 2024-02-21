@@ -9,3 +9,5 @@ fun deposit(){}
 fun withDrow(){}
 
 fun checkBalance(){}
+
+fun doYouNeedAnyThingElse(){}
