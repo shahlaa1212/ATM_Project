@@ -1,8 +1,11 @@
+import kotlin.system.exitProcess
+
 class ATM {
     var balance: Int = 0
     var pinCode: Int = 0
     var selectedChoice: Int = 0
     var money: Int = 0
+    var selectedOperationForAnyThingElse: Int = 0
 
 
 
@@ -58,6 +61,15 @@ class ATM {
     }
 
     fun doYouNeedAnyThingElse() {
-
+        println("How can i help you with?")
+        println("1- For Main, 2- For Quit")
+        selectedOperationForAnyThingElse = Integer.valueOf(readLine().toString())
+        when (selectedOperationForAnyThingElse){
+            1 -> selectedChoice
+            2 ->{
+                println("Thanks for using our ATM")
+                exitProcess(0)
+            }
+        }
     }
 }
