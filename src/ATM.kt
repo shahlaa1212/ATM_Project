@@ -28,16 +28,13 @@ class ATM {
         }
     }
 
-    fun checkBalance() {
-
-    }
-
     fun deposit() {
         println("How much money you want to deposit?")
         var money: Int
         money = Integer.valueOf(readLine().toString())
         balance += money
         println("Deposit operation done successfully")
+        checkBalance()
         doYouNeedAnyThingElse()
     }
 
@@ -47,12 +44,20 @@ class ATM {
         if (money <= balance){
             balance -= money
             println("Withdrawbdone successfully")
+            checkBalance()
+            doYouNeedAnyThingElse()
         } else{
-            println("Sorry you have enough balance")
+            println("Sorry you don't have enough balance")
+            doYouNeedAnyThingElse()
         }
-
     }
 
+    fun checkBalance() {
+        println("Your curreny balance is equal to : $balance" )
+        doYouNeedAnyThingElse()
+    }
 
-    fun doYouNeedAnyThingElse() {}
+    fun doYouNeedAnyThingElse() {
+
+    }
 }
