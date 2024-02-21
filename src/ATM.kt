@@ -1,2 +1,3 @@
 class ATM {
+    void getUserInformation(){}
 }
