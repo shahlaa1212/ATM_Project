@@ -1,3 +1,7 @@
 class ATM {
-    void getUserInformation(){}
+
+}
+
+fun getUserInformation(){
+    print("welcome to your ATM Bank")
 }
