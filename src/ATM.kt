@@ -41,7 +41,17 @@ class ATM {
         doYouNeedAnyThingElse()
     }
 
-    fun withDrow() {}
+    fun withDrow() {
+        println("How much money you want to withdrow?")
+        money = Integer.valueOf(readLine().toString())
+        if (money <= balance){
+            balance -= money
+            println("Withdrawbdone successfully")
+        } else{
+            println("Sorry you have enough balance")
+        }
+
+    }
 
 
     fun doYouNeedAnyThingElse() {}
