@@ -7,3 +7,5 @@ fun getUserInformation(){
 }
 
 fun withDrow(){}
+
+fun checkBalance(){}
